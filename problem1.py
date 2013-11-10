@@ -87,9 +87,15 @@ def solution1(MAX):
 @timeit
 def solution2(MAX):
     '''
-     closed form solution to the same problem
+      closed form solution to the same problem
+      
+      Note: MAX is non-inclusive
     '''
     return summify(MAX, 3) + summify(MAX, 5) - summify(MAX, 15)
+
+################################################################
+#
+################################################################
 
 if __name__ == "__main__":
     print '\nset-based solution:', solution1(1000)

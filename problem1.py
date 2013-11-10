@@ -64,6 +64,8 @@ def summify(MAX, modulus):
     else:
         pairs = midpoint/modulus - 0.5
 
+    # each pair totals to the size of the outermost pair: max + min
+    # then include the midpoint, if need be
     total = pairs * (maximum + minimum) + extra
     return int(total)
 

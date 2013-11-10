@@ -1,3 +1,6 @@
+.Python
+include
+man
 *.py[cod]
 
 # C extensions

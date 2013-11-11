@@ -58,6 +58,8 @@ def solution1():
 
         # make the array into a string
         text = ''.join(decrypted)
+
+        # score the string, remember the best one
         score = compute_score(text)
         if score > best_score:
             best_score = score

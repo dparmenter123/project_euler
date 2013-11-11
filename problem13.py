@@ -42,12 +42,12 @@ def solution2():
      Slightly clearer, more efficient solution.
      
      We know that we need only add up the first 12 digits:
-     Proof: the largest number each line could possibly be is 50 consecutive 9's
-            the carry from the 1's digit in the case would be 45. But the next digit
-            would also be all 9's, so the 5 will not contribute to the carry.
-            The 100's digit will also be all nines, so we will add its 5 plus the 4 from the 
-            ones place, maxing out at 9. So, you can never have a contribution from more 
-            than 2 digits back, FOR THIS PARTICULAR problem.
+     Proof: the largest number each line could possibly be is 100 consecutive 9's.
+            the 1's digit in this case will thus total to 900, and we will need to carry 90
+            the 10's digit in this case will also total to 900 + the 0 from the 1's digit
+            the 100's digit in this case will also total to 900 + the 9 from the 1's digit
+            as you carry this out, you can't have a contribution from more than 2 digits 
+            back, FOR THIS PARTICULAR problem.
     '''
 
     total = 0
